@@ -13,10 +13,10 @@ const users = []
 app.post('/sign-up', (req, res) => {
     const { username, avatar} = req.body;
 
-    if (!username || !avatar){
-        res.status(400).send({ message: "Insira todos os campos namoral" });
-        return;
-    }
+    // if (!username || !avatar){
+    //     res.status(400).send({ message: "Insira todos os campos namoral" });
+    //     return;
+    // }
 
     const novoUser = {
         username,
